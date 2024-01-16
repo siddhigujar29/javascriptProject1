@@ -1,0 +1,160 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(228, 46, 167),blue);
+    padding: 10px;
+}
+.todo-app{
+    width: 50%;
+    max-width: 500%;
+    background:white;
+    margin: 100px auto 80px;   /*top > right > bottom > left */
+    padding: 10px 30px 70px;    /* top> bottom> left> right*/
+    border-radius: 10px;
+}
+.todo-app h2{
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.row{
+    display: flex;              /*   */
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(233, 221, 221);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;    /*full width*/
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 14px;
+    background:red;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    
+    content: '';
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-image: url(C:/images/unchecked2.png);
+    background-size: cover;
+    background-position: center;
+    top: 2px;
+    left: 1px;
+}
+
+ul li.checked{
+    color:black;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(C:/images/checked4.png);     /*nantr he bghyche*/
+    }
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: grey;
+    line-height: 40px;
+    text-align: center;
+}
+
+ul li span:hover{
+    background: goldenrod;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
